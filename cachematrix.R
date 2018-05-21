@@ -1,9 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Get the inverse of a matrix using the cached data
 
-## Write a short comment describing this function
-
-## get a special object that set, get the value of the matrix then set and get inverse of the matrix
+## Get a special object that set, get the value of the matrix then set and get inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -22,14 +19,11 @@ makeCacheMatrix <- function(x = matrix()) {
     list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
-
-## Write a short comment describing this function
-
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix. 
 ## If the inverse has already been calculated (and the matrix has not changed), 
 ## then the cachesolve should retrieve the inverse from the cache.
 
-## this assignment assumes that the matrix supplied is always invertible
+## This assignment assumes that the matrix supplied is always invertible
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
